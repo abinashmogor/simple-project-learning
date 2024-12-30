@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Twitter</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&family=Ubuntu:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <div id="logo-container">
+            <img src="logo.png" alt="Twitter Logo" id="logo">
+        </div>
+
+        <div id="form-container">
+            <div id="form">
+                <h1>Login to Twitter</h1>
+                
+                <button id="google"><i class='bx bxl-google'></i> Sign in with Google</button>
+                <button id="apple"><i class='bx bxl-apple'></i> Sign in with Apple</button>
+
+                <div class="or-divider">
+                    <span>or</span>
+                </div>
+
+                <input type="text" id="username" placeholder="Phone, email, or username" required>
+                <input type="password" id="password" placeholder="Password" required>
+                <button id="login-btn">Log In</button>
+
+                <div class="forgot-password">
+                    <a href="#">Forgot password?</a>
+                </div>
+                
+                <p class="question">Don't have an account?</p>
+                <button id="signup-btn">Sign Up</button>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

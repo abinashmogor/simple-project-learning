@@ -1,0 +1,163 @@
+/* Importing fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&family=Ubuntu:wght@400;500&display=swap');
+
+/* Reset margin and padding for all elements */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+    background-color: #f5f8fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+}
+
+/* Styling for the Twitter logo */
+#logo {
+    width: 50px;
+    margin-bottom: 20px;
+}
+
+#logo-container {
+    margin-bottom: 30px;
+}
+
+/* Form container for login elements */
+#form-container {
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+#form h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #1da1f2;
+}
+
+/* Buttons */
+button {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    border-radius: 20px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#google {
+    background-color: #db4437;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#apple {
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#login-btn {
+    background-color: #1da1f2;
+    color: white;
+}
+
+#signup-btn {
+    background-color: #00acee;
+    color: white;
+}
+
+button:hover {
+    transform: translateY(-5px);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+/* Input fields */
+input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccd6dd;
+}
+
+input:focus {
+    outline: none;
+    border-color: #1da1f2;
+}
+
+/* Forgot password link */
+.forgot-password a {
+    font-size: 0.9rem;
+    color: #1da1f2;
+    text-decoration: none;
+}
+
+.forgot-password a:hover {
+    text-decoration: underline;
+}
+
+/* Dividing "or" */
+.or-divider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+    color: #888;
+}
+
+.or-divider::before,
+.or-divider::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background-color: #888;
+    margin: 0 10px;
+}
+
+.question {
+    font-size: 1rem;
+    margin-top: 20px;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    #form h1 {
+        font-size: 1.5rem;
+    }
+
+    #google, #apple, #login-btn, #signup-btn {
+        font-size: 0.9rem;
+    }
+
+    input {
+        font-size: 0.9rem;
+    }
+}
